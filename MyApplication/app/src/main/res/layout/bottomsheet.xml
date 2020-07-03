@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/bottomsheet"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="#E9A7F4"
+        app:behavior_hideable="true"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/font"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Font"
+                    android:textSize="25dp" />
+
+                <Spinner
+                    android:id="@+id/fontname"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_span="4"
+                    android:entries="@array/fonts"
+                    android:prompt="@array/fonts"
+                    android:layout_weight="1" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/sizeSmall"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Aa"
+                    android:textSize="15dp"/>
+
+                <SeekBar
+                    android:id="@+id/adjust"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_span="2"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/sizebig"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_span="2"
+                    android:text="Aa"
+                    android:textSize="30dp" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/align"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Align"
+                    android:textSize="25dp" />
+
+                <ImageView
+                    android:id="@+id/left"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/align_left_24" />
+
+                <ImageView
+                    android:id="@+id/center"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/align_center_24" />
+
+                <ImageView
+                    android:id="@+id/right"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:src="@drawable/align_right_24" />
+
+                <ImageView
+                    android:id="@+id/justify"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_format_align_justify_24" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/lineSpacing"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Line spacing"
+                    android:textSize="25dp"/>
+
+                <ImageView
+                    android:id="@+id/space1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/space1" />
+
+                <ImageView
+                    android:id="@+id/space2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:src="@drawable/space2" />
+
+                <ImageView
+                    android:id="@+id/space3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:src="@drawable/ic_baseline_format_align_justify_24" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:id="@+id/mode"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:text="Mode"
+                    android:textSize="25dp"/>
+
+                <TextView
+                    android:id="@+id/mode1"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#000000"
+                    android:gravity="center"
+                    android:text="Aa"
+                    android:textColor="#FFFFFF"
+                    android:textSize="20dp"/>
+
+                <TextView
+                    android:id="@+id/mode2"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="Aa"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/mode3"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="#EFD893"
+                    android:gravity="center"
+                    android:text="Aa"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+        </TableLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
